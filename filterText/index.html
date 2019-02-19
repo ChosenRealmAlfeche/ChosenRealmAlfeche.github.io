@@ -1,0 +1,60 @@
+<DOCTYPE! html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Filter Text</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="navbar">
+      <span class="navbar-text">Text Filter!</span>
+    </div>
+  </nav>
+
+  <div class="flex-grid row">
+    <div class="flex-col">
+      <textarea class="write-area" placeholder="Add text to filter here..." id="write-value"></textarea>
+    </div>
+    <div class="flex-col">
+      <div class="flex-grid col">
+        <div class="flex-col">
+          <input class="filter-area" placeholder="Comma separated remove text..." id="replace-field" />
+        </div>
+        <div class="flex-col mt-1">
+          <textarea class="filter-area" placeholder="Add filters here..." id="filter-field"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="button-div flex-grid justify-right">
+    <div class="flex-col">
+      <button class="btn-primary" onclick="filterText()">
+        Filter
+      </button>
+    </div>
+
+    <div class="flex-col">
+      <button class="btn-primary" onclick="visualize()">
+        Visualize
+      </button>
+    </div>
+  </div>
+
+  <div class="flex-grid row">
+    <div class="flex-col">
+      <textarea class="output-area" placeholder="Output here..." id="output-field" readonly></textarea>
+    </div>
+    <div class="flex-col">
+      <textarea class="output-area" placeholder="Visualization here..." id="visualize-field"></textarea>
+    </div>
+  </div>
+
+  <script src="javascript/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.core.js"></script>
+</body>
+</html>

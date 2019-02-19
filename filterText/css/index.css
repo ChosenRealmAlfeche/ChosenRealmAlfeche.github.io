@@ -1,0 +1,59 @@
+div.navbar {
+  background-color: grey;
+  margin-bottom: 20px;
+}
+
+span.navbar-text {
+  text-align: center;
+}
+
+textarea {
+  overflow-x: scroll;
+  word-wrap: inherit;
+}
+
+textarea.write-area {
+  width: 90%;
+  height: 24%;
+}
+
+textarea.filter-area {
+  width: 90%;
+  height: 20%;
+}
+
+input.filter-area {
+  width: 90%;
+  height: 3%;
+}
+
+textarea.output-area {
+  margin-top: 50px;
+  width: 90%;
+  height: 20%;
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: space-between
+}
+
+.flex-col {
+  width: 100%;
+}
+
+.flex-grid.justify-right {
+  justify-content: flex-end;
+}
+
+.flex-grid.col {
+  flex-direction: column;
+}
+
+.flex-grid.row {
+  flex-direction: row;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
